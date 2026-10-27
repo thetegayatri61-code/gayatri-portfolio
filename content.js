@@ -116,20 +116,9 @@ window.PORTFOLIO_CONTENT = {
       "date": "October 09, 2025",
       "duration": "40 credit hours",
       "type": "Certificate of Attendance",
-      "image": "certificates/Screenshot 2025-10-13 230525.png",
-      "link": "https://www.credly.com/badges/277ee580-0fc1-41c2-a8bf-ed1cf671ce09",
-      "description": "Completed course attendance focusing on foundational enterprise Linux system administration, shell operations, permissions, and service management."
-    },
-    {
-      "id": "cert-img-2",
-      "title": "Red Hat System Administration I (RH124 — RHA), Version 9.3 (Verification Copy)",
-      "issuer": "Red Hat",
-      "date": "October 09, 2025",
-      "duration": "40 credit hours",
-      "type": "Certificate of Attendance",
       "image": "certificates/Screenshot 2025-10-27 184015.png",
       "link": "https://www.credly.com/badges/277ee580-0fc1-41c2-a8bf-ed1cf671ce09",
-      "description": "Official course attendance certificate and verification badge issued by Red Hat Global Learning Services."
+      "description": "Completed course attendance focusing on foundational enterprise Linux system administration, shell operations, permissions, and service management."
     },
     {
       "id": "cert-img-3",
