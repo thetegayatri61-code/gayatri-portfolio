@@ -1,0 +1,772 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#FAF8F5">
+  <meta name="description" content="Gayatri Thete — Computer Science and Business Systems student at JSPM RSCOE, Pune. Portfolio showcasing AI, software development, data intelligence, and legal metrology projects.">
+  <meta name="author" content="Gayatri Thete">
+  <title>Gayatri Thete — Portfolio | Computer Science & Business Systems</title>
+
+  <!-- Google Fonts: Manrope (Display), DM Sans (Body), DM Mono (Code/Metadata), Newsreader (Editorial Serif) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,400;0,500;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Manrope:wght@400;500;600;700;800&family=Newsreader:ital,opsz,wght@1,6..72,400;1,6..72,500;1,6..72,600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Content Source of Truth -->
+  <script src="content.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body class="theme-light">
+  <!-- Subtle Grain & Reading Progress -->
+  <div class="site-grain" aria-hidden="true"></div>
+  <div class="scroll-progress-bar" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- Announcement / Availability Ticker Bar -->
+  <div class="announcement-bar" role="region" aria-label="Availability Status">
+    <div class="announcement-content">
+      <span class="status-indicator"><span class="pulse-ring"></span><span class="pulse-dot"></span></span>
+      <span class="announcement-text">Open for 2026/2027 Placement &amp; Internship Opportunities • Computer Science &amp; Business Systems</span>
+      <a href="#contact" class="announcement-link">Get in touch <span>→</span></a>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="topbar" id="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="#home" aria-label="Gayatri Thete Homepage">
+        <span class="brand-avatar" id="brandAvatar">GT</span>
+        <div class="brand-info">
+          <span class="brand-name" id="brandName">Gayatri Thete</span>
+          <span class="brand-sub">CSBS • RSCOE Pune</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" id="navMenu" aria-label="Main navigation">
+        <a href="#work" class="nav-link"><span>01</span> Work</a>
+        <a href="#about" class="nav-link"><span>02</span> About</a>
+        <a href="#skills" class="nav-link"><span>03</span> Toolkit</a>
+        <a href="#certificates" class="nav-link"><span>04</span> Certificates</a>
+        <a href="#journey" class="nav-link"><span>05</span> Journey</a>
+        <a href="#contact" class="nav-link"><span>06</span> Contact</a>
+      </nav>
+
+      <div class="topbar-actions">
+        <!-- Resume Action Button (Hydrated dynamically) -->
+        <a id="navResumeBtn" class="button button-ghost button-sm" href="#" target="_blank" rel="noopener" style="display:none;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          <span>Resume</span>
+        </a>
+
+        <a class="button button-dark button-sm nav-cta" href="#contact">
+          <span>Let’s Connect</span>
+          <span class="btn-arrow" aria-hidden="true">↗</span>
+        </a>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="toggle-bar"></span>
+          <span class="toggle-bar"></span>
+          <span class="toggle-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero section-wrap" id="home">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="eyebrow-pill">
+            <span class="pulse-indicator"></span>
+            <span class="editable-text" data-edit="role" data-placeholder="Your Role">Computer Science &amp; Business Systems Student</span>
+            <span class="eyebrow-sep">/</span>
+            <span class="editable-text" data-edit="location" data-placeholder="Location">Pune, India</span>
+          </div>
+
+          <h1 class="hero-title">
+            Curious mind.<br>
+            <span class="headline-serif editable-text" data-edit="headline" data-placeholder="Headline statement">
+              Building thoughtful technology for real-world problems.
+            </span>
+          </h1>
+
+          <p class="hero-description editable-text" data-edit="intro" data-placeholder="Brief introduction...">
+            I’m a Computer Science and Business Systems student at JSPM Rajarshi Shahu College of Engineering, Pune. I’m interested in AI, software development, and cybersecurity—and I enjoy turning ideas into practical, useful projects.
+          </p>
+
+          <div class="hero-metrics">
+            <div class="metric-badge">
+              <span class="metric-num">9.4</span>
+              <span class="metric-label">FY CGPA</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-badge">
+              <span class="metric-num">B.Tech</span>
+              <span class="metric-label">CS &amp; Business Systems</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-badge">
+              <span class="metric-num">2023–28</span>
+              <span class="metric-label">JSPM RSCOE, Pune</span>
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <a class="button button-dark" href="#work">
+              <span>Explore My Work</span>
+              <span class="btn-arrow" aria-hidden="true">↓</span>
+            </a>
+            <a class="button button-outline" href="#certificates">
+              <span>View Certificates</span>
+              <span class="btn-arrow" aria-hidden="true">↗</span>
+            </a>
+            <a id="heroResumeBtn" class="button button-soft" href="#" target="_blank" rel="noopener" style="display: none;">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              <span>Download CV</span>
+            </a>
+          </div>
+
+          <div class="hero-submeta">
+            <div class="meta-item">
+              <span class="meta-tag">FOCUS AREAS</span>
+              <span class="meta-value">Artificial Intelligence • Python • OCR • Data Engineering • Cybersecurity</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- HERO PORTRAIT & TECH VISUAL CARD -->
+        <div class="hero-visual" aria-label="Gayatri Thete professional profile portrait and interactive tech badge">
+          <div class="hero-portrait-card">
+            <div class="portrait-topbar">
+              <div class="art-badge"><span class="terminal-dot"></span> GT_SYS // ACTIVE</div>
+              <span class="art-meta-coords">18.5204° N, 73.8567° E</span>
+            </div>
+
+            <div class="portrait-frame">
+              <img 
+                id="heroProfileImg" 
+                class="hero-profile-img" 
+                src="assets/Professional%20Portrait%20with%20Shoulder-Length%20Waves.png" 
+                alt="Gayatri Thete — Computer Science and Business Systems Student" 
+                loading="eager" 
+                decoding="async"
+              >
+              <div class="portrait-overlay-glow" aria-hidden="true"></div>
+              <div class="vf-corner vf-tl" aria-hidden="true"></div>
+              <div class="vf-corner vf-tr" aria-hidden="true"></div>
+              <div class="vf-corner vf-bl" aria-hidden="true"></div>
+              <div class="vf-corner vf-br" aria-hidden="true"></div>
+            </div>
+
+            <!-- Floating Contextual Tech Tags -->
+            <div class="float-chip chip-1">
+              <span class="chip-dot"></span>
+              <span>CSBS • RSCOE Pune</span>
+            </div>
+            <div class="float-chip chip-2">
+              <span class="chip-code">&lt;Python / ML / CV&gt;</span>
+            </div>
+            <div class="float-chip chip-3">
+              <span class="chip-pulse"></span>
+              <span>FY CGPA: 9.4 ✳</span>
+            </div>
+            <div class="float-chip chip-4">
+              <span>AI &amp; Cybersecurity</span>
+              <span class="chip-arrow">↗</span>
+            </div>
+
+            <div class="portrait-footer">
+              <span class="art-stat-label">GAYATRI THETE</span>
+              <span class="art-stat-val">READY FOR INTERNSHIPS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-scroll-cue">
+        <a href="#work" class="scroll-link" aria-label="Scroll to projects">
+          <span class="scroll-text">SCROLL TO DISCOVER</span>
+          <span class="scroll-arrow" aria-hidden="true">↓</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- INTERESTS TICKER TAPE -->
+    <section class="ticker-section" aria-label="Key technical interests marquee">
+      <div class="ticker-track" id="tickerTrack">
+        <!-- Dynamically rendered ticker content -->
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS SECTION -->
+    <section class="section-wrap section-block" id="work">
+      <div class="section-header">
+        <div class="header-left">
+          <span class="section-tag">01 / SELECTED WORK</span>
+          <h2 class="section-title">Projects with a <em>clear purpose.</em></h2>
+        </div>
+        <p class="section-desc">
+          Engineering solutions designed for real-world impact—from multi-source student competency mapping to computer vision legal metrology compliance.
+        </p>
+      </div>
+
+      <div class="project-grid" id="projectGrid">
+        <!-- Project Cards dynamically injected with rich SVG/CSS previews -->
+      </div>
+    </section>
+
+    <!-- ABOUT ME & PHILOSOPHY SECTION -->
+    <section class="about-section" id="about">
+      <div class="section-wrap">
+        <div class="about-grid">
+          <div class="about-sidebar">
+            <span class="section-tag">02 / A LITTLE ABOUT ME</span>
+            
+            <div class="about-stamp-container">
+              <div class="curved-badge">
+                <div class="stamp-inner">
+                  <span class="stamp-icon">✳</span>
+                  <span class="stamp-text">LEARN<br>BUILD<br><i>IMPROVE</i></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="about-quick-card">
+              <h4>Quick Profile</h4>
+              <ul class="quick-facts">
+                <li><strong>Degree:</strong> B.Tech in CSBS (2023–2028)</li>
+                <li><strong>College:</strong> JSPM RSCOE, Pune</li>
+                <li><strong>Current Result:</strong> FY CGPA 9.4</li>
+                <li><strong>Location:</strong> Pune, Maharashtra, India</li>
+                <li><strong>Status:</strong> Ready for Internships</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="about-main">
+            <h2 class="about-heading">
+              Building strong engineering foundations.<br>
+              <em>Guided by relentless curiosity.</em>
+            </h2>
+
+            <div class="about-body-text">
+              <p class="editable-text" data-edit="about" data-placeholder="Tell your story...">
+                I’m an aspiring software professional who enjoys building projects that solve real-world problems, exploring new technologies, and strengthening my coding and analytical skills. I’m responsible, detail-oriented, and proactive, and I value thoughtful problem-solving, collaboration, and clear communication.
+              </p>
+            </div>
+
+            <div class="about-interests-block">
+              <span class="block-label">CORE DOMAINS &amp; AREAS OF INTEREST</span>
+              <div class="interest-pills" id="interestList">
+                <!-- Injected from content.js -->
+              </div>
+            </div>
+
+            <div class="about-quote-box">
+              <div class="quote-symbol">“</div>
+              <div class="quote-content">
+                <p>My approach: stay curious, learn by doing, and make each iteration significantly better and cleaner than the last.</p>
+                <span class="quote-author">— Gayatri Thete</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS & TOOLKIT SECTION -->
+    <section class="section-wrap section-block" id="skills">
+      <div class="section-header">
+        <div class="header-left">
+          <span class="section-tag">03 / TECHNICAL TOOLKIT</span>
+          <h2 class="section-title">Tools I use to <em>explore &amp; build.</em></h2>
+        </div>
+        <p class="section-desc">
+          Categorized across programming languages, AI &amp; data analysis, tools, project technologies, and professional competencies.
+        </p>
+      </div>
+
+      <div class="skills-card">
+        <div class="skills-tabs" id="skillTabs" role="tablist" aria-label="Filter skills by category">
+          <!-- Injected via script -->
+        </div>
+
+        <div class="skills-body">
+          <div class="skills-toolbar">
+            <div class="skills-active-info">
+              <span class="skills-category-badge" id="skillGroupLabel">ALL SKILLS</span>
+              <span class="skills-counter" id="skillCount">17 ITEMS</span>
+            </div>
+            <div class="skills-filter-input-wrap">
+              <input type="text" id="skillSearch" placeholder="Search a skill or tool..." aria-label="Search skills">
+            </div>
+          </div>
+
+          <div class="skill-chips-grid" id="skillChips">
+            <!-- Skill chips dynamically rendered -->
+          </div>
+
+          <div class="skills-disclaimer">
+            <span class="disclaimer-icon">ℹ</span>
+            <span>Skills and tools reflect academic coursework, self-driven study, and hands-on projects, presented honestly without inflated percentage bars.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEDICATED CERTIFICATIONS & RECOGNITION SECTION -->
+    <section class="section-wrap section-block" id="certificates">
+      <div class="section-header">
+        <div class="header-left">
+          <span class="section-tag">04 / VERIFIED CREDENTIALS</span>
+          <h2 class="section-title">Certifications &amp; <em>recognized training.</em></h2>
+        </div>
+        <p class="section-desc">
+          Verified certificates across enterprise Linux system administration, Java EE, cybersecurity, operating systems, and innovation challenges with full-size interactive preview.
+        </p>
+      </div>
+
+      <!-- Certificate Filter Buttons & Counter -->
+      <div class="cert-toolbar">
+        <div class="cert-filter-pills" id="certFilterPills">
+          <button type="button" class="cert-filter-btn active" data-cert-filter="all">All Credentials <span class="cert-counter-badge" id="certTotalCount">0</span></button>
+          <button type="button" class="cert-filter-btn" data-cert-filter="images">Certificate Images <span class="cert-counter-badge" id="certImagesCount">0</span></button>
+          <button type="button" class="cert-filter-btn" data-cert-filter="documents">Official Documents &amp; Badges <span class="cert-counter-badge" id="certDocsCount">0</span></button>
+        </div>
+        <div class="cert-hint">
+          <span>💡 Click any certificate card to view in full resolution lightbox</span>
+        </div>
+      </div>
+
+      <!-- Responsive Certificate Grid -->
+      <div class="certificate-grid" id="certificateGrid">
+        <!-- Rendered dynamically from content.certificates -->
+      </div>
+    </section>
+
+    <!-- ACADEMIC JOURNEY & EDUCATION MILESTONES -->
+    <section class="journey-section" id="journey">
+      <div class="section-wrap section-block">
+        <div class="section-header theme-dark-header">
+          <div class="header-left">
+            <span class="section-tag light-tag">05 / THE JOURNEY SO FAR</span>
+            <h2 class="section-title">Academic milestones &amp; <em>growth.</em></h2>
+          </div>
+          <p class="section-desc light-desc">
+            An overview of my formal education, verified academic distinctions, and co-curricular technical initiatives.
+          </p>
+        </div>
+
+        <div class="journey-dual-grid">
+          <!-- EDUCATION COLUMN -->
+          <div class="journey-col">
+            <div class="col-head">
+              <div class="col-head-title">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                <h3>Formal Education</h3>
+              </div>
+              <span class="col-sub">RSCOE &amp; Junior College</span>
+            </div>
+
+            <div class="timeline" id="educationList">
+              <!-- Dynamically populated from content.js -->
+            </div>
+          </div>
+
+          <!-- CO-CURRICULAR & CLUBS COLUMN -->
+          <div class="journey-col">
+            <div class="col-head">
+              <div class="col-head-title">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <h3>Co-Curricular &amp; Club Initiatives</h3>
+              </div>
+              <span class="col-sub">PDC Club &amp; Workshops</span>
+            </div>
+
+            <div class="achievement-grid" id="achievementList">
+              <!-- Injected dynamically -->
+            </div>
+
+            <div class="col-head achieve-head">
+              <div class="col-head-title">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                <h3>Academic Highlights</h3>
+              </div>
+            </div>
+
+            <div class="highlights-box">
+              <div class="highlight-item">
+                <span class="hl-badge">9.4 CGPA</span>
+                <p>First Year B.Tech in CSBS at JSPM RSCOE Pune, maintaining top academic standing.</p>
+              </div>
+              <div class="highlight-item">
+                <span class="hl-badge">94.83%</span>
+                <p>Secondary School Certificate (SSC) distinction with stellar analytical foundation.</p>
+              </div>
+              <div class="highlight-item">
+                <span class="hl-badge">86.44%</span>
+                <p>Higher Secondary Certificate (HSC) in Science stream at PVP Junior College.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT & FOOTER SECTION -->
+    <section class="contact-section" id="contact">
+      <div class="section-wrap">
+        <span class="section-tag dark-lime-tag">06 / GET IN TOUCH</span>
+        
+        <div class="contact-card-grid">
+          <div class="contact-copy">
+            <h2 class="contact-heading">
+              Have an opportunity<br>
+              or <em>interesting challenge?</em>
+            </h2>
+            <p class="contact-sub">
+              I’m eager to contribute my energy, coding foundations, and analytical mindset to forward-thinking engineering teams and internship roles.
+            </p>
+
+            <div class="contact-meta-pills">
+              <div class="contact-pill">
+                <span class="pill-title">Based in</span>
+                <span class="pill-value">Pune, Maharashtra</span>
+              </div>
+              <div class="contact-pill">
+                <span class="pill-title">Availability</span>
+                <span class="pill-value">Internships &amp; Placements</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-box">
+            <div class="box-top">
+              <span class="box-label">DIRECT COMMUNICATION</span>
+              <span class="box-status">Quick Response</span>
+            </div>
+
+            <div class="email-action-row">
+              <a class="email-main-link" id="emailLink" href="mailto:gayatrithete06@gmail.com">
+                <span class="email-address-text">gayatrithete06@gmail.com</span>
+                <span class="email-icon">↗</span>
+              </a>
+              <button class="copy-email-btn" id="copyEmailBtn" type="button" aria-label="Copy email address to clipboard">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                <span>Copy</span>
+              </button>
+            </div>
+
+            <div class="social-channels" id="contactLinks">
+              <!-- Populated dynamically -->
+            </div>
+
+            <div class="resume-box" id="resumeBox" style="display:none;">
+              <span class="resume-label">OFFICIAL CV</span>
+              <a class="button button-lime button-sm" id="downloadResumeBtn" href="#" target="_blank" rel="noopener">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                <span>Download Resume</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <footer class="site-footer">
+          <div class="footer-left">
+            <span>© <span id="year">2026</span> Gayatri Thete.</span>
+            <span class="footer-sep">•</span>
+            <span class="footer-tagline editable-text" data-edit="footer" data-placeholder="Footer quote">Curious by nature. Building one project at a time.</span>
+          </div>
+          <div class="footer-right">
+            <span class="footer-note">Handcrafted with clean HTML, CSS &amp; JS</span>
+            <a href="#home" class="back-to-top" aria-label="Back to top">Back to top ↑</a>
+          </div>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <!-- ACCESSIBLE CERTIFICATE LIGHTBOX MODAL -->
+  <div class="lightbox-backdrop" id="certificateLightbox" role="dialog" aria-modal="true" aria-label="Certificate Image Lightbox" hidden>
+    <div class="lightbox-modal">
+      <div class="lightbox-head">
+        <div class="lightbox-info">
+          <span class="lightbox-badge" id="lightboxIssuer">ISSUER</span>
+          <h3 class="lightbox-title" id="lightboxTitle">Certificate Title</h3>
+          <span class="lightbox-meta" id="lightboxDate">Date &amp; Details</span>
+        </div>
+        
+        <div class="lightbox-head-actions">
+          <span class="lightbox-counter" id="lightboxCounter">01 / 05</span>
+          <button class="lightbox-close-btn" id="lightboxClose" aria-label="Close Lightbox (Escape)">&times;</button>
+        </div>
+      </div>
+
+      <div class="lightbox-stage">
+        <button class="lightbox-nav-btn lightbox-prev-btn" id="lightboxPrev" aria-label="Previous Certificate (Left Arrow)">‹</button>
+        
+        <div class="lightbox-img-wrapper" id="lightboxImgWrapper">
+          <img id="lightboxImg" src="" alt="Enlarged Certificate Image">
+        </div>
+
+        <button class="lightbox-nav-btn lightbox-next-btn" id="lightboxNext" aria-label="Next Certificate (Right Arrow)">›</button>
+      </div>
+
+      <div class="lightbox-footer">
+        <p class="lightbox-description" id="lightboxDesc"></p>
+        <div class="lightbox-actions-row" id="lightboxActions"></div>
+        <div class="lightbox-keyboard-hint">
+          <span>Keyboard: <kbd>Esc</kbd> to close • <kbd>←</kbd> <kbd>→</kbd> to navigate</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROJECT DETAILS INTERACTIVE MODAL -->
+  <div class="modal-backdrop" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal-card">
+      <div class="modal-head">
+        <div class="modal-header-info">
+          <span class="modal-category" id="modalCategory">CATEGORY</span>
+          <h3 class="modal-title" id="modalTitle">Project Title</h3>
+        </div>
+        <button class="modal-close" id="modalClose" aria-label="Close project modal">&times;</button>
+      </div>
+      
+      <div class="modal-body">
+        <div class="modal-preview-zone" id="modalPreviewZone">
+          <!-- Dynamic Project Graphic / Image -->
+        </div>
+
+        <div class="modal-details-grid">
+          <div class="modal-main-content">
+            <h4>Overview &amp; Concept</h4>
+            <p id="modalDescription"></p>
+            
+            <h4>Technical Approach &amp; Scope</h4>
+            <p id="modalDetails"></p>
+          </div>
+
+          <div class="modal-sidebar-info">
+            <div class="modal-info-block">
+              <h5>Technologies &amp; Tools</h5>
+              <div class="modal-tags" id="modalTools"></div>
+            </div>
+
+            <div class="modal-info-block">
+              <h5>Project Status</h5>
+              <div class="modal-status-badge" id="modalStatus"></div>
+            </div>
+
+            <div class="modal-links" id="modalLinks">
+              <!-- Links if available -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FLOATING EDIT PORTFOLIO CONTROLS -->
+  <aside class="editor-widget" id="editorWidget" aria-label="Visual Portfolio Editor">
+    <button class="editor-trigger" id="editLaunch" type="button" title="Open Visual Editor (Ctrl+E)">
+      <span class="edit-icon">✏️</span>
+      <span class="edit-label">Edit Portfolio</span>
+      <span class="edit-badge">Visual Mode</span>
+    </button>
+  </aside>
+
+  <!-- SLIDE-OUT VISUAL PORTFOLIO EDITOR DRAWER -->
+  <div class="editor-drawer" id="editDrawer" hidden role="dialog" aria-modal="false" aria-labelledby="editorDrawerTitle">
+    <div class="drawer-header">
+      <div>
+        <span class="drawer-tag">VISUAL PORTFOLIO EDITOR</span>
+        <h3 id="editorDrawerTitle">Customize Your Portfolio</h3>
+      </div>
+      <button class="icon-button" id="closeEditorBtn" aria-label="Close editor">✕</button>
+    </div>
+
+    <div class="drawer-tabs" role="tablist">
+      <button class="drawer-tab active" data-tab="tab-general">General</button>
+      <button class="drawer-tab" data-tab="tab-projects">Projects</button>
+      <button class="drawer-tab" data-tab="tab-certs">Certificates</button>
+      <button class="drawer-tab" data-tab="tab-education">Education</button>
+      <button class="drawer-tab" data-tab="tab-skills">Skills</button>
+      <button class="drawer-tab" data-tab="tab-contact">Contact &amp; CV</button>
+    </div>
+
+    <div class="drawer-body">
+      <!-- GENERAL TAB -->
+      <div class="drawer-panel active" id="tab-general">
+        <p class="panel-tip">💡 You can also click text directly on the page to edit inline!</p>
+        <div class="form-group">
+          <label for="inputName">Full Name</label>
+          <input type="text" id="inputName" class="form-input">
+        </div>
+        <div class="form-group">
+          <label for="inputRole">Professional Role / Title</label>
+          <input type="text" id="inputRole" class="form-input">
+        </div>
+        <div class="form-group">
+          <label for="inputLocation">Location</label>
+          <input type="text" id="inputLocation" class="form-input">
+        </div>
+        <div class="form-group">
+          <label for="inputProfilePhoto">Profile Photo Path</label>
+          <input type="text" id="inputProfilePhoto" class="form-input" placeholder="assets/...">
+        </div>
+        <div class="form-group">
+          <label for="inputHeadline">Headline Accent Statement</label>
+          <textarea id="inputHeadline" class="form-input" rows="2"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="inputIntro">Hero Introduction</label>
+          <textarea id="inputIntro" class="form-input" rows="3"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="inputAbout">About Me Story</label>
+          <textarea id="inputAbout" class="form-input" rows="4"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="inputFooter">Footer Quote</label>
+          <input type="text" id="inputFooter" class="form-input">
+        </div>
+      </div>
+
+      <!-- PROJECTS TAB -->
+      <div class="drawer-panel" id="tab-projects">
+        <p class="panel-tip">Edit project information or upload custom thumbnail images.</p>
+        <div class="project-editor-selector">
+          <label for="projectSelect">Select Project to Edit:</label>
+          <select id="projectSelect" class="form-input"></select>
+        </div>
+
+        <div id="projectFormFields">
+          <div class="form-group">
+            <label for="projTitle">Title</label>
+            <input type="text" id="projTitle" class="form-input">
+          </div>
+          <div class="form-group">
+            <label for="projCategory">Category &amp; Domain</label>
+            <input type="text" id="projCategory" class="form-input">
+          </div>
+          <div class="form-group">
+            <label for="projDesc">Brief Description</label>
+            <textarea id="projDesc" class="form-input" rows="3"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="projDetails">Technical Architecture &amp; Scope</label>
+            <textarea id="projDetails" class="form-input" rows="3"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="projTools">Technologies (comma-separated)</label>
+            <input type="text" id="projTools" class="form-input" placeholder="e.g. Python, Flask, OpenCV">
+          </div>
+          <div class="form-group">
+            <label for="projStatus">Current Status</label>
+            <input type="text" id="projStatus" class="form-input">
+          </div>
+          <div class="form-group">
+            <label for="projGithub">GitHub Repository Link (optional)</label>
+            <input type="url" id="projGithub" class="form-input" placeholder="https://github.com/...">
+          </div>
+          <div class="form-group">
+            <label for="projDemo">Live Demo Link (optional)</label>
+            <input type="url" id="projDemo" class="form-input" placeholder="https://...">
+          </div>
+          <div class="form-group">
+            <label>Custom Thumbnail Image</label>
+            <div class="image-uploader">
+              <input type="file" id="projImageFile" accept="image/*" class="file-input">
+              <button type="button" class="button button-sm button-ghost" onclick="document.getElementById('projImageFile').click()">Choose Image File</button>
+              <button type="button" class="button button-sm button-ghost" id="removeProjImage">Clear Custom Image</button>
+            </div>
+            <div id="imagePreviewContainer" class="image-preview-box"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CERTIFICATES TAB -->
+      <div class="drawer-panel" id="tab-certs">
+        <p class="panel-tip">Manage all certificate images and credentials.</p>
+        <div id="certEditList"></div>
+      </div>
+
+      <!-- EDUCATION TAB -->
+      <div class="drawer-panel" id="tab-education">
+        <p class="panel-tip">Update degrees, institutions, and academic scores.</p>
+        <div id="educationEditList"></div>
+      </div>
+
+      <!-- SKILLS TAB -->
+      <div class="drawer-panel" id="tab-skills">
+        <p class="panel-tip">Add, remove, or modify skills and category groups.</p>
+        <div class="add-skill-box">
+          <input type="text" id="newSkillName" placeholder="Skill Name (e.g. React.js)" class="form-input">
+          <select id="newSkillGroup" class="form-input">
+            <option value="Programming">Programming</option>
+            <option value="AI &amp; Data">AI &amp; Data</option>
+            <option value="Tools">Tools</option>
+            <option value="Professional">Professional</option>
+            <option value="Project Technologies">Project Technologies</option>
+          </select>
+          <button type="button" class="button button-sm button-dark" id="addSkillBtn">+ Add Skill</button>
+        </div>
+        <div class="skills-manage-list" id="skillsManageList"></div>
+      </div>
+
+      <!-- CONTACT TAB -->
+      <div class="drawer-panel" id="tab-contact">
+        <p class="panel-tip">Update links and configure your downloadable Resume file.</p>
+        <div class="form-group">
+          <label for="inputEmail">Email Address</label>
+          <input type="email" id="inputEmail" class="form-input">
+        </div>
+        <div class="form-group">
+          <label for="inputGithub">GitHub Profile URL</label>
+          <input type="url" id="inputGithub" class="form-input">
+        </div>
+        <div class="form-group">
+          <label for="inputLinkedin">LinkedIn Profile URL</label>
+          <input type="url" id="inputLinkedin" class="form-input">
+        </div>
+        <div class="form-group">
+          <label for="inputResume">Resume Path or URL</label>
+          <input type="text" id="inputResume" class="form-input" placeholder="e.g. Gayatri_Thete_Resume.pdf or https://...">
+          <small class="field-help">Place your resume file (e.g. resume.pdf) in the project folder and type its filename here.</small>
+        </div>
+      </div>
+    </div>
+
+    <div class="drawer-footer">
+      <div class="drawer-actions">
+        <button type="button" class="button button-lime button-sm" id="exportContentBtn">
+          <span>⬇ Export content.js</span>
+        </button>
+        <button type="button" class="button button-ghost button-sm" id="resetDefaultsBtn">
+          <span>Reset Defaults</span>
+        </button>
+        <button type="button" class="button button-dark button-sm" id="finishEditingBtn">
+          <span>Done</span>
+        </button>
+      </div>
+
+      <div class="publish-notice">
+        <strong>How to publish your changes to GitHub Pages:</strong>
+        <ol>
+          <li>Click <b>Export content.js</b> to download the updated file.</li>
+          <li>Replace the <code>content.js</code> file in your portfolio folder with the downloaded file.</li>
+          <li>Commit and push to your GitHub repository. GitHub Pages updates automatically!</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST FEEDBACK NOTIFICATION -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
